@@ -98,7 +98,7 @@ int isKeyword(char *word) {
 }
 
 void skipWhitespace() {
-    while (isspace(currentChar)) {
+    while (isspace(currentChar) && currentChar != '\n') {
         getNextChar();
     }
 }
